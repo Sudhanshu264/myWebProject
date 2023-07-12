@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+      
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+
+    <section>
+        <div class="search-container">
+            <input type="text" id="movieName" placeholder="Enter a movie name">
+            <button class="btn" onclick="fetchMovieDetails()">Search Movie</button>
+        </div>
+    </section>
+
+    <section>
+        <div class="intro" id="intro">
+            
+            <h1 class="highlight">Want a complete details of a movie? </h1>
+            <p> Search for the movie name and get complete details including directors, actors, IMDB ratings, Votes, Earnings and more intresting facts.</p>
+        </div>
+    </section>
+
+    <div  id="loader"></div>
+
+    <section>
+        <div class="movie-container" id="movieContainer">
+            <div class="content">
+                <h1 id="title" class="title">Batman</h1>
+                <span id="year"></span>
+                <p id="desc" class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima officiis? Facere officiis officia rerum, labore necessitatibus quidem nisi ab.</p>
+                <p>Actors: <span id="actors"></span></p>
+                <p>Directors: <span id="directors"></span></p>
+                <p>Awards: <span id="awards"></span></p>
+                <p>Box Office Collection: <span id="collection"></span></p>
+            </div>
+
+            <div class="movie-img-container">
+                <img class="movie-img" id="img" src="https://m.media-amazon.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_SX300.jpg" alt="">
+                <p class="ratings tag">IMDB: <span id="ratings"></span></p>
+                <p class="genre tag" id="genre">Action, Adventure, Drama</p>
+
+            </div>
+            
+        </div>
+        <div class="error-container" id="errorContainer">
+            <img src="./not found.gif" class="error-img-container">
+            <h1 class="highlight">Movie Not Found</h1>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+</html>
