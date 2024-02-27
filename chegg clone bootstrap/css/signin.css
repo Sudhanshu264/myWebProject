@@ -1,0 +1,16 @@
+#signin{
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#main{
+    height: 600px;
+    width: 400px;
+    border: 2px solid black;
+    margin-right: 50px;
+}
+#show{
+    
+}
